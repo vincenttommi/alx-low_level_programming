@@ -1,40 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - print double digit combos
+ *main - print the  alphabets
  *
- * Description: print double digit combos
- *
- * Return: Always 0 (Success)
+ *Return: 0
  */
 
 int main(void)
 {
-	int i, j;
+	char letter;
 
-	i = 48;
-	j = 48;
-
-	while (i < 58)
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		j = i + 1;
-		while (j < 58)
-		{
-			putchar(i);
-			putchar(j);
-
-			if (i < 56 || j < 57)
-			{
-				putchar(44);
-				putchar(32);
-			}
-			j++;
-		}
-
-		i++;
+		putchar(letter);
 	}
-
-	putchar(10);
-
+	putchar('\n');
 	return (0);
 }

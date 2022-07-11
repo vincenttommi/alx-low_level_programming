@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - takes in pointer to an int and updates it to 98
- * @author Abdihakim Abdirahman
+ * @author: vincent korir
  * @n: puntero
  * Return: 0
  */

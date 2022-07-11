@@ -2,7 +2,7 @@
 
 /**
  * _strlen - function that returns length of a String
- * @author vincent korir
+ * @autor vincent korir
  * @s: checks the length of our charactor string
  * Return: 0
  */

@@ -1,18 +1,13 @@
-/**
- * wildcmp - compares two strings
- * @s1: first string
- * @s2: second string. It can contains a * as a special character.
- * Return: 1 if are identical, 0 if not.
- */
-int wildcmp(char *s1, char *s2)
-{
-if (*s2 == '*' && *(s2 + 1) != '\0' && *s1 == '\0')
-return (0);
-if (*s1 == '\0' && *s2 == '\0')
-return (1);
-if (*s1 == *s2)
-return (wildcmp(s1 + 1, s2 + 1));
-if (*s2 == '*')
-return (wildcmp(s1, s2 + 1) || wildcmp(s1 + 1, s2));
-return (0);
-}
+#ifndef MAIN_H
+#include <stdio.h>
+
+void _puts_recursion(char *s);
+void _print_rev_recursion(char *s);
+int _strlen_recursion(char *s);
+int factorial(int n);
+int _pow_recursion(int x, int y);
+int _sqrt_recursion(int n);
+int is_prime_number(int n);
+int is_palindrome(char *s);
+int wildcmp(char *s1, char *s2);
+#endif

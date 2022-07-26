@@ -1,1 +1,1 @@
-static readme
+static readme.md

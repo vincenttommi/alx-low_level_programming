@@ -1,7 +1,9 @@
 #!/bin/bash
 
-gcc -c *.c
+#compile
 
-ar rc liball.a *.o
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -c *.c
 
-ranlib liball.a
+# create lib
+
+ar -cr liball.a *.o
